@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+function gonext1(){
+        
+            alert('Registration Successful');
+        
+}
+</script>
+</head>
+<body>
+	<div align="center">
+	
+<h2>Please fill the Project details</h2>
+</div>
+<form onsubmit="return gonext1()">
+<table align="center">
+	<tr><td> Project Name: </td> <td> <input type="text" name="projectname"></td></tr>
+     <tr><td>Client Name: </td> <td>  <input type="text" name="clientname"></td></tr>
+  <tr><td>Team Size:</td> <td> <select name="teamsize">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+  </td></tr>
+     <tr><td><input type="submit"name="submit" value="Register"></td></tr>
+	</table>
+</body>
+</html>

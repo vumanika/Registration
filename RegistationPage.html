@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+        return true;
+}
+function gonext(){
+        
+            alert('DetailsValidated');
+        return true;
+}
+</script>=
+</head>
+<body>
+
+	<div align="center">
+	<h2>Welcome!!</h2>
+<h3>Please fill Your details</h3>
+</div>
+<form onsubmit="return gonext()" method="post" >
+<table align="center">
+	<tr><td> First Name: </td> <td> <input type="text" name="firstname"></td></tr>
+     <tr><td>Last Name: </td> <td>  <input type="text" name="lastname"></td></tr>
+ <tr><td>E-mail:</td> <td>  <input type="email" id="myEmail"onblur="validateEmail(this)"name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></td></tr>
+ <tr><td>Address:</td> <td>  <input type="text" name="address"></td></tr>
+ <tr><td>City: </td> <td> <input type="text" name="city"></td></tr>
+ <tr><td>State:</td> <td> <select name="state">
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Telangana">Telangana</option>
+    <option value="Delhi">Delhi</option>
+    <option value="West Bengal">West Bengal</option>
+  </select>
+  </td></tr>
+ 
+     <tr><td><input type="submit"name="submit" value="Submit to register for project"></td></tr>
+	</table>
+
+ 
+</form>
+
+
+
+</body>
+
+</html>
